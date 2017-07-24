@@ -1,0 +1,43 @@
+package sakaya;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.Container;
+import java.awt.BorderLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class order extends JFrame implements ActionListener{
+	JTextField text1;
+	JTextField text2;
+	JLabel label;
+
+	public static void main(String args[]){
+		order order_window = new order("注文画面");
+	    order_window.setVisible(true);
+	}
+	
+	order(String title){
+		setTitle(title);
+		setBounds(100,100,300,250);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel p = new JPnel();
+		
+		text1 = new JTextField("Name:",20);
+		
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+}

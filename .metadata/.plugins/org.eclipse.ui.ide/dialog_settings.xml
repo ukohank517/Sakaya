@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="org.eclipse.cdt.debug.gdbjtag:9.2.0.201612061315"/>
+		<item value="org.eclipse.cdt.gdb:9.2.0.201612061315"/>
+		<item value="org.eclipse.cdt.mylyn:5.17.0.v20160701-1337"/>
+		<item value="org.eclipse.cdt.sdk:9.2.0.201612061315"/>
+		<item value="org.eclipse.cdt:9.2.0.201612061315"/>
+		<item value="org.eclipse.draw2d.sdk:3.10.100.201606061308"/>
+		<item value="org.eclipse.draw2d:3.10.100.201606061308"/>
+		<item value="org.eclipse.emf.common:2.13.0.v20161129-0615"/>
+		<item value="org.eclipse.emf.ecore:2.13.0.v20161129-0615"/>
+		<item value="org.eclipse.gef.sdk:3.11.0.201606061308"/>
+		<item value="org.eclipse.gef:3.11.0.201606061308"/>
+		<item value="org.eclipse.help:2.2.1.v20161124-1400"/>
+		<item value="org.eclipse.jdt:3.12.2.v20161124-1400"/>
+		<item value="org.eclipse.mylyn.bugzilla_feature:3.21.0.v20160909-1813"/>
+		<item value="org.eclipse.mylyn.commons.identity:1.13.0.v20160630-1702"/>
+		<item value="org.eclipse.mylyn.commons.notifications:1.13.0.v20160721-2347"/>
+		<item value="org.eclipse.mylyn.commons.repositories.http:1.13.0.v20160630-1702"/>
+		<item value="org.eclipse.mylyn.commons.repositories:1.13.0.v20160630-1702"/>
+		<item value="org.eclipse.mylyn.commons:3.21.0.v20160707-1856"/>
+		<item value="org.eclipse.mylyn.context_feature:3.21.0.v20160815-2336"/>
+		<item value="org.eclipse.mylyn.discovery:3.21.0.v20160729-1739"/>
+		<item value="org.eclipse.mylyn.ide_feature:3.21.0.v20160912-1820"/>
+		<item value="org.eclipse.mylyn.java_feature:3.21.0.v20160701-1337"/>
+		<item value="org.eclipse.mylyn.monitor:3.21.0.v20160630-1702"/>
+		<item value="org.eclipse.mylyn.tasks.ide:3.21.0.v20160929-1805"/>
+		<item value="org.eclipse.mylyn.team_feature:3.21.0.v20160701-1337"/>
+		<item value="org.eclipse.mylyn.wikitext_feature:2.10.1.v20161129-1925"/>
+		<item value="org.eclipse.mylyn_feature:3.21.0.v20160914-0252"/>
+		<item value="org.eclipse.pde:3.12.2.v20161124-1400"/>
+		<item value="org.eclipse.platform:4.6.2.v20161124-1529"/>
+		<item value="org.eclipse.ptp.core:9.1.1.201612062209"/>
+		<item value="org.eclipse.ptp.etfw:9.1.1.201612062209"/>
+		<item value="org.eclipse.ptp.remote.terminal:9.1.1.201612062209"/>
+		<item value="org.eclipse.ptp:9.1.1.201612062209"/>
+		<item value="org.eclipse.rcp:4.6.2.v20161124-1400"/>
+		<item value="org.eclipse.remote.console:2.1.1.201612062149"/>
+		<item value="org.eclipse.rse:3.7.2.201610260947"/>
+		<item value="org.eclipse.tm.terminal.control.feature:4.2.0.201611281915"/>
+		<item value="org.eclipse.tm.terminal.view.feature:4.2.0.201611281915"/>
+		<item value="org.eclipse.wb.core.feature:1.9.0"/>
+		<item value="org.eclipse.wb.core.ui.feature:1.9.0"/>
+		<item value="org.eclipse.wb.core.xml.feature:1.9.0"/>
+		<item value="org.eclipse.wb.doc.user.feature:1.9.0"/>
+		<item value="org.eclipse.wb.layout.group.feature:1.9.0"/>
+		<item value="org.eclipse.wb.rcp.SWT_AWT_support:1.9.0"/>
+		<item value="org.eclipse.wb.rcp.doc.user.feature:1.9.0"/>
+		<item value="org.eclipse.wb.rcp.feature:1.9.0"/>
+		<item value="org.eclipse.wb.swing.doc.user.feature:1.9.0"/>
+		<item value="org.eclipse.wb.swing.feature:1.9.0"/>
+		<item value="org.eclipse.wb.swt.feature:1.9.0"/>
+		<item value="org.eclipse.wb.xwt.feature:1.9.0"/>
+		<item value="org.eclipse.wst.xml_ui.feature:3.8.0.v201608061842"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+</section>

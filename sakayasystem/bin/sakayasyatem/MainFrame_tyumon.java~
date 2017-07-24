@@ -1,0 +1,84 @@
+package sakayasyatem;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class MainFrame_tyumon extends JFrame{
+
+    public String[] PanelNames = {"top","request","confirm","finishOrder","fin","err","finishArrive","show"};
+    TopPanel top = new TopPanel(this,PanelNames[0]);
+    RequestPanel request = new RequestPanel(this,PanelNames[1]);
+    ConfirmPanel confirm = new ConfirmPanel(this,PanelNames[2]);
+    FinishOrderPanel finishOrder = new FinishOrderPanel(this, PanelNames[3]);
+    FinPanel fin = new FinPanel(this,PanelNames[4]);
+    ErrPanel err = new ErrPanel(this,PanelNames[5]);
+    FinishArrivePanel finishArrive = new FinishArrivePanel(this,PanelNames[6]);
+    ShowPanel show = new ShowPanel(this,PanelNames[7]);
+
+    public MainFrame_tyumon(){
+	this.add(top);top.setVisible(true);
+	this.add(request);request.setVisible(false);
+	this.add(confirm);confirm.setVisible(false);
+	this.add(finishOrder);finishOrder.setVisible(false);
+	this.add(fin);fin.setVisible(false);
+	this.add(err);err.setVisible(false);
+	this.add(finishArrive);finishArrive.setVisible(false);
+	this.add(show);show.setVisible(false);
+	this.setBounds(100,100,400,200);
+    }
+    
+    public static void main(String[] args){
+	MainFra = new MainFrame();
+	mf.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	mf.setVisible(true);
+    }
+    
+    public void PanelChange(JPanel jp, String str){
+	System.out.println(jp.getName());
+	if(name == PanelNames[0]){
+	    mp = (TopPanel)jp;
+	    mp.setVisible(false);
+	}else if (name == PanelNames[1]){
+	    mp = (RequestPanel)jp;
+	    mp.setVisible(false);
+	}else if (name == PanelNames[2]){
+	    mp = (ConfirmPanel)jp;
+	    mp.setVisible(false);
+	}else if (name == PanelNames[3]){
+	    mp = (FinishOrderPanel)jp;
+	    mp.setVisible(false);
+	}else if (name == PanelNames[4]){
+	    mp = (FinPanel)jp;
+	    mp.setVisible(false);
+	}else if (name == PanelNames[5]){
+	    mp = (ErrPanel)jp;
+	    mp.setVisible(false);
+	}else if (name == PanelNames[6]){
+	    mp = (FinishArrivePanel)jp;
+	    mp.setVisible(false);
+	}else if (name == PanelNames[7]){
+	    mp = (ShowPanel)jp;
+	    mp.setVisible(false);
+	}
+
+	if(str == PanelNames[0]){
+	    top.setVisible(true);
+	}else if(str == PanelNames[1]){
+	    request.setVisible(true);
+	}else if(str == PanelNames[2]){
+	    confirm.setVisible(true);
+	}else if(str == PanelNames[3]){
+	    finishOrder.setVisible(true);
+	}else if(str == PanelNames[4]){
+	    fin.setVisible(true);
+	}else if(str == PanelNames[5]){
+	    err.setVisible(true);
+	}else if(str == PanelNames[6]){
+	    finishArrive.setVisible(true);
+	}else if(str == PanelNames[7]){
+	    show.setVisible(true);
+	}
+	
+    }
+    
+}

@@ -1,0 +1,113 @@
+package sakayasyatem;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class RequestPanel extends JPanel{
+    JButton lef,rig;
+    JLabel paneltitle;
+    JLabel panename,panenum;
+    JTextField textname,textnum;
+    
+    MainFrame_tyumon mf;
+    String str;
+    public RequestPanel(MainFrame_tyumon m, String s){
+    	mf = m;
+    	str = s;
+    	this.setName("request");
+    	this.setLayout(null);
+    	this.setSize(400,300);
+    	paneltitle = new JLabel("以下の入荷依頼を作成します.");
+    	paneltitle.setBounds(15,5,400,40);
+    	panename = new JLabel("[酒の銘柄]");
+    	panename.setBounds(15, 45, 100, 40);
+    	panenum = new JLabel("[酒の本数]");
+    	panenum.setBounds(15, 85, 100, 40);
+    	this.add(paneltitle);
+    	this.add(panename);
+    	this.add(panenum);
+    	textname = new JTextField(100);
+    	textname.setBounds(80, 45, 200, 40);
+    	textnum = new JTextField(100);
+    	textnum.setBounds(80, 85, 200, 40);
+    	this.add(textname);
+    	this.add(textnum);
+    	
+    	
+    	lef = new JButton("OK");
+    	lef.setBounds(20, 200, 150, 40);
+    	lef.addActionListener(new ActionListener(){
+    		public void actionPerformed(ActionEvent e){
+    			//uselessの保存
+    			ArrayList<String> inp = new ArrayList<String>();
+    			inp.add(textname.getText());
+    			inp.add(textnum.getText());
+    			fileinput(inp);
+    			
+    			pc(mf.PanelNames[2]);
+    		}
+	    });
+    	this.add(lef);
+    	rig = new JButton("cancel");
+    	rig.setBounds(220,200,150,40);
+    	rig.addActionListener(new ActionListener(){
+    		public void actionPerformed(ActionEvent e){
+    			pc(mf.PanelNames[0]);
+    		}
+	    	});
+    	this.add(rig);
+        //this.setBackground(Color.getHSBColor(65, 0.7f, 0.9f));
+    	}
+
+	private void fileinput(ArrayList<String> inp) {
+		// TODO 自動生成されたメソッド・スタブ
+		try{
+		      File file = new File("./a.txt");
+
+		      if (checkBeforeWritefile(file)){
+		        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+
+		        pw.println("今日の最高気温は");
+		        pw.println(10);
+		        pw.println("度です");
+
+		        pw.close();
+		      }else{
+		        System.out.println("ファイルに書き込めません");
+		      }
+		    }catch(IOException e){
+		      System.out.println(e);
+		    }
+	}
+	
+	public void pc(String str){
+    	mf.PanelChange((JPanel)this, str);
+    }
+	
+	private static boolean checkBeforeWritefile(File file){
+	    System.out.println("ません");
+	    
+	    if (file.exists()){
+	        System.out.println("ファイルが存在する。");
+	      if (file.isFile() && file.canWrite()){
+	        return true;
+	      }
+	    }
+
+	    return false;
+	  }
+	
+}
