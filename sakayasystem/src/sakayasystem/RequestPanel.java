@@ -52,7 +52,7 @@ public class RequestPanel extends JPanel{
     	lef.addActionListener(new ActionListener(){
     		public void actionPerformed(ActionEvent e){
     			String a = textnum.getText();
-    			if(isNumber(a)) {
+    			if(isNumber(a) && Integer.parseInt(a)>=1) {
     				pc(mf.PanelNames[2]);
     			}
     			else pc(mf.PanelNames[5]);

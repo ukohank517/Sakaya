@@ -17,7 +17,7 @@ public class ShowPanel extends JPanel {
     
     MainFrame_tyumon mf;
     String str;
-    public ShowPanel(MainFrame_tyumon m,String s, String[] useless){
+    public ShowPanel(MainFrame_tyumon m,String s, String[] useless, String[] nowstatus){
         mf = m;
         str = s;
         this.setName(s);
@@ -31,9 +31,9 @@ public class ShowPanel extends JPanel {
     	panename.setBounds(15, 40, 200, 40);
     	panenum = new JLabel("[酒の本数:]" + useless[1]);
     	panenum.setBounds(15, 75, 200, 40);
-    	allname = new JLabel("[酒の銘柄]:"+ useless[0]);
+    	allname = new JLabel("[酒の銘柄]:"+ nowstatus[0]);
     	allname.setBounds(15, 145, 200, 40);
-    	allnum = new JLabel("[酒の本数:]" + useless[1]);
+    	allnum = new JLabel("[酒の本数:]" + nowstatus[1]);
     	allnum.setBounds(15, 180, 200, 40);
     	this.add(paneltitle);
     	this.add(alltitle);
@@ -54,6 +54,6 @@ public class ShowPanel extends JPanel {
         //this.setBackground(Color.getHSBColor(f, 0.5f, 0.8f));
     }
     public void pc(){
-        mf.PanelChange((JPanel)this, mf.PanelNames[1], null);
+        mf.PanelChange((JPanel)this, mf.PanelNames[0], null);
     }
 }

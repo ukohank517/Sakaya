@@ -46,10 +46,12 @@ public class FinPanel extends JPanel{
     	lef.addActionListener(new ActionListener(){
     		public void actionPerformed(ActionEvent e){
     			String a = textnum.getText();
-    			if(isNumber(a)){
+    			if(  (isNumber(a)) &&  (Integer.parseInt(a) >=1) ){
     				pc(mf.PanelNames[6]);
     			}
-    			else pc(mf.PanelNames[5]);
+    			else {
+    				pc(mf.PanelNames[5]);
+    			}
     		}
 	    });
     	this.add(lef);
@@ -57,7 +59,7 @@ public class FinPanel extends JPanel{
     	rig.setBounds(220,200,150,40);
     	rig.addActionListener(new ActionListener(){
     		public void actionPerformed(ActionEvent e){
-    			pc(mf.PanelNames[1]);
+    			pc(mf.PanelNames[0]);
     		}
 	    	});
     	this.add(rig);

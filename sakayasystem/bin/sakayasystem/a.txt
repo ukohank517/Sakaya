@@ -1,5 +1,5 @@
 aaa,12
-vodka,12
+vodka,35
 tequila,15
 asahi super dry,22
 gimlet,24
