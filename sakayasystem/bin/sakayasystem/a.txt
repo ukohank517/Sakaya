@@ -1,7 +1,6 @@
-aaa,36
+aaa,24
 vodka,12
 tequila,15
 asahi super dry,22
 gimlet,24
 kirin,18
-aab,12
