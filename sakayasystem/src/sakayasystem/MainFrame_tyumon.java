@@ -117,7 +117,7 @@ public class MainFrame_tyumon extends JFrame{
     		finishOrder = (FinishOrderPanel)jp;
     		finishOrder.setVisible(false);
     		useless = null;
-    		nowstatus = null;
+    		//nowstatus = null;
     	}else if (name == PanelNames[4]){
     		fin = (FinPanel)jp;
     		fin.setVisible(false);
@@ -126,7 +126,7 @@ public class MainFrame_tyumon extends JFrame{
     		err = (ErrPanel)jp;
     		err.setVisible(false);
     		useless = null;
-    		nowstatus = null;
+    		//nowstatus = null;
     	}else if (name == PanelNames[6]){
     		finishArrive = (FinishArrivePanel)jp;
     		finishArrive.setVisible(false);
@@ -137,7 +137,7 @@ public class MainFrame_tyumon extends JFrame{
     		//ファイルへの書き込み
     		//**************
     		useless = null;
-    		nowstatus = null;
+    		//nowstatus = {" "," "};
     	}
 
 		if(str == PanelNames[0]){
@@ -220,6 +220,7 @@ public class MainFrame_tyumon extends JFrame{
 			if(zaiko_name.get(i).equals( useless[0])) {
 				int inp=Integer.parseInt(zaiko_num.get(i)) + Integer.parseInt(useless[1]);
 				zaiko_num.set(i,String.valueOf(inp));
+				System.out.println("+++++++"+nowstatus[0]);
 				nowstatus[0]=zaiko_name.get(i);
 				nowstatus[1]=zaiko_num.get(i);
 				break;
